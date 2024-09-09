@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #a2e24a;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links li {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+#hero {
+    background: url('https://www.google.com/imgres?q=pest%20control&imgurl=https%3A%2F%2Fd2tez01fe91909.cloudfront.net%2Fwp-content%2Fuploads%2F2022%2F05%2FAdobeStock_411971550-scaled.jpeg.webp&imgrefurl=https%3A%2F%2Fwww.marketwatch.com%2Fguides%2Fhome-improvement%2Fbest-pest-control%2F&docid=FxaqPcdOe4UA4M&tbnid=c86Lh7JAJL1vtM&vet=12ahUKEwjDzZOp_bKIAxVxaUEAHblvBNgQM3oECFoQAA..i&w=2048&h=1366&hcb=2&ved=2ahUKEwjDzZOp_bKIAxVxaUEAHblvBNgQM3oECFoQAA') no-repeat center center/cover;
+    color: #000;
+    text-align: center;
+    padding: 2rem;
+}
+
+#services, #about, #contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
